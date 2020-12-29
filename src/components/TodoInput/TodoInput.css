@@ -1,0 +1,21 @@
+.todoInput {
+    width: 60%;
+    margin-bottom: 1em;
+    background: #8080B3;
+    color: white;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.todoInput button, .todoInput input {
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border-radius: 0.75em;
+}
+
+.todoInput button {
+    background: #552100;
+    color: white;
+}

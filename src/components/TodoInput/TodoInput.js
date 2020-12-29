@@ -1,11 +1,16 @@
 import React from 'react';
+import './TodoInput.css';
 
 const todoInput = ({changed, clicked, todo}) => {
+    const onSubmitHandler = event => {
+        event.preventDefault();
+        clicked()
+    }
     return (
-        <div>
+        <form onSubmit={(event) => onSubmitHandler(event)} className="todoInput">
             <input type="text" onChange={(event) => changed(event)} value={todo}/>
-            <button onClick={() => clicked()}>ADD TODO</button>
-        </div>
+            <button>ADD TODO</button>
+        </form>
     )
 }
 

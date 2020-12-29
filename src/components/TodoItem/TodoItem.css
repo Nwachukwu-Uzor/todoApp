@@ -1,6 +1,35 @@
 .todoItem {
-    border: 1px solid green;
+    border: 2px solid green;
     width: 60%;
-    margin: 2em auto;
+    margin: 1em auto;
     box-shadow: 3px 3px 6px #ccc;
+}
+
+.todoItem button {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 32px;
+    transition: transform 1s ease-in;
+}
+
+.todoItem button:hover {
+    transform: scale(1.05);
+    opacity: 0.6;
+    box-shadow: 3px 3px 6px #ccc;
+}
+
+.toggle {
+    background-color: blue;
+    color: white;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.todoText {
+    font-family: Verdana;
+    font-size: 1.5em;
+    text-transform: capitalize;
 }
